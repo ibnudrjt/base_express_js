@@ -19,13 +19,12 @@ bot.onText(/\/start/, (msg) => {
     );
 });
 
-bot.onText(/\/show_url/, (msg) => {
+bot.onText(/\/show_sensor/, (msg) => {
     global_msg_id = msg.chat.id;
     bot.sendMessage(
         global_msg_id,
         `
-            https://esp-telebot.herokuapp.com/api/sensor/123/65/78 \n
-            https://esp-telebot.herokuapp.com/api/test/cobacoba
+            https://esp-telebot.herokuapp.com/api/sensor/123/65/78     
         `
     );
 });
@@ -48,7 +47,8 @@ router.get('/sensor/:sensor1/:sensor2/:sensor3', (req, res, next) => {
   try {
       bot.sendMessage(
             global_msg_id, //msg.id
-           `     Sensor Kelembaban:: ${req.params.sensor1} \n
+           `F13_PSD_M Ibnu Darajat Salam_41421110118 \n
+            Sensor Kelembaban:: ${req.params.sensor1} \n
             Sensor Jarak:: ${req.params.sensor2} cm \n
             Sensor Suhu:: ${req.params.sensor3} °C`
      );
