@@ -48,7 +48,7 @@ router.get('/sensor/:sensor1/:sensor2/:sensor3', (req, res, next) => {
       bot.sendMessage(
             global_msg_id, //msg.id
            `F13_PSD_M Ibnu Darajat Salam_41421110118 \n
-            Sensor Kelembaban:: ${req.params.sensor1} \n
+            Sensor Kelembaban:: ${req.params.sensor1} % \n
             Sensor Jarak:: ${req.params.sensor2} cm \n
             Sensor Suhu:: ${req.params.sensor3} °C`
      );
